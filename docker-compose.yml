@@ -1,0 +1,8 @@
+services:
+  # Инфраструктура: Redis для обмена событиями (Event Bus)
+  redis:
+    image: redis:7-alpine
+    container_name: shop-redis
+    ports:
+      - "6379:6379"
+    restart: always
